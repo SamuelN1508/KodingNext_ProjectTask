@@ -7,8 +7,6 @@ Proyek seleksi Preliminary Teaching Evaluation (Prelim) Koding Next.
 - **`kalkulator_tk.py`** : Aplikasi GUI Python (Tkinter) untuk hitung diskon (sesuai video tugas).
 - **`kalkulator_cli.py`** : Kalkulator diskon versi terminal/CLI sederhana.
 - **`portofolio.html`** : Website portofolio profil sederhana (HTML & CSS warna dasar).
-- **`kalkulator.html`** : Kalkulator diskon versi web sederhana.
-- **`KodingNext_Prelim_Teaching_Guideline.pdf`** : Panduan belajar alur mengajar mockup class (45 menit).
 
 ---
 
