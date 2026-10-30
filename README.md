@@ -1,12 +1,9 @@
-# Koding Next — Advanced Teacher Projects
-
-Proyek seleksi Preliminary Teaching Evaluation (Prelim) Koding Next.
-
+# Koding Next — Project Task
 ## Daftar File
 
-- **`kalkulator_tk.py`** : Aplikasi GUI Python (Tkinter) untuk hitung diskon (sesuai video tugas).
-- **`kalkulator_cli.py`** : Kalkulator diskon versi terminal/CLI sederhana.
-- **`portofolio.html`** : Website portofolio profil sederhana (HTML & CSS warna dasar).
+- **`kalkulator_tk.py`** : Aplikasi GUI Python (Tkinter) untuk hitung diskon.
+- **`kalkulator_cli.py`** : Kalkulator diskon versi terminal/CLI.
+- **`portofolio.html`** : Website portofolio profil.
 
 ---
 
