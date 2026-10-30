@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Diskon Sederhana</title>
+  <style>
+    /* CSS Dasar: Mudah dipahami & diajarkan ke siswa */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .hasil {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <!-- Bagian Tampilan (HTML) -->
+  <div class="card">
+    <h2>Kalkulator Diskon</h2>
+
+    <label for="harga">Harga Asli (Rp):</label>
+    <input type="number" id="harga" placeholder="Contoh: 20000">
+
+    <label for="diskon">Diskon (%):</label>
+    <input type="number" id="diskon" placeholder="Contoh: 25">
+
+    <button onclick="hitungDiskon()">Hitung Total</button>
+
+    <!-- Tempat menampilkan hasil -->
+    <div class="hasil" id="hasil">Total Bayar: Rp 0</div>
+  </div>
+  <!-- Bagian Logika (JavaScript Sederhana) -->
+  <script>
+    function hitungDiskon() {
+      // 1. Ambil nilai dari input HTML
+      let harga = document.getElementById("harga").value;
+      let diskon = document.getElementById("diskon").value;
+
+      // 2. Cek apakah input kosong
+      if (harga === "" || diskon === "") {
+        alert("Harap isi harga dan persentase diskon!");
+        return;
+      }
+
+      // 3. Rumus diskon
+      let potongan = harga * (diskon / 100);
+      let totalBayar = harga - potongan;
+
+      // 4. Tampilkan hasil ke layar
+      document.getElementById("hasil").innerText = "Total Bayar: Rp " + totalBayar.toLocaleString("id-ID");
+    }
+  </script>
+
+</body>
+</html>

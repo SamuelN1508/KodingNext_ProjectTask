@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portofolio Saya</title>
+	<style>
+		/* CSS Warna Dasar & Teks Sederhana */
+		body {
+			background-color: lightcyan;
+			color: darkblue;
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			color: navy;
+		}
+
+		h2 {
+			color: crimson;
+		}
+
+		p {
+			color: black;
+		}
+
+		/* Styling gambar sederhana */
+		.foto-profil {
+			width: 120px;
+			height: 120px;
+			border: 3px solid navy;
+		}
+
+		.foto-proyek {
+			width: 200px;
+			height: 130px;
+			border: 2px solid orange;
+			display: block;
+			margin: 10px auto;
+		}
+
+		ul {
+			display: inline-block;
+			text-align: left;
+			background-color: white;
+			color: darkgreen;
+			padding: 15px 35px;
+			border: 2px solid green;
+		}
+
+		.box-proyek {
+			background-color: white;
+			border: 2px solid orange;
+			width: 280px;
+			display: inline-block;
+			margin: 10px;
+			padding: 15px;
+		}
+
+		button {
+			background-color: yellow;
+			color: black;
+			font-size: 16px;
+			padding: 8px 16px;
+			border: 1px solid black;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- 1. Foto Profil & Judul -->
+	<img src="images/profile.jpg" alt="Foto Profil" class="foto-profil">
+	<h1>Portofolio Samuel</h1>
+	<p>Halo, selamat datang di website pertama saya! Saya sedang belajar membuat website.</p>
+
+	<hr>
+
+	<!-- 2. Keahlian -->
+	<h2>Keahlian Saya</h2>
+	<ul>
+		<li>Belajar HTML dasar</li>
+		<li>Belajar CSS warna</li>
+		<li>Bahasa Python dasar</li>
+	</ul>
+
+	<hr>
+
+	<!-- 3. Daftar Proyek dengan Gambar -->
+	<h2>Proyek Saya</h2>
+
+	<div class="box-proyek">
+		<h3>1. Kalkulator Diskon</h3>
+		<img src="images/proyek1.jpg" alt="Gambar Kalkulator" class="foto-proyek">
+		<p>Program kalkulator diskon menggunakan Python &amp; HTML.</p>
+	</div>
+
+	<div class="box-proyek">
+		<h3>2. Website Pribadi</h3>
+		<img src="images/proyek2.jpg" alt="Gambar Website" class="foto-proyek">
+		<p>Website portofolio sederhana dengan HTML dan warna CSS.</p>
+	</div>
+
+	<hr>
+
+	<!-- 4. Kontak & Tombol JS Sederhana -->
+	<h2>Kontak Saya</h2>
+	<p>Email: samuel@email.com</p>
+	<button onclick="sapa()">Klik Disini!</button>
+
+	<script>
+		function sapa() {
+			alert("Halo! Terima kasih sudah mengunjungi website saya!");
+		}
+	</script>
+
+</body>
+
+</html>
