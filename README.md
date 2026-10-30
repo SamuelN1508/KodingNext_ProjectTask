@@ -1,23 +1,24 @@
-# Koding Next — Project Task
-## Daftar File
+# Koding Next — Advanced Teacher Projects
 
-- **`kalkulator_tk.py`** : Aplikasi GUI Python (Tkinter) untuk hitung diskon.
-- **`kalkulator_cli.py`** : Kalkulator diskon versi terminal/CLI.
-- **`portofolio.html`** : Website portofolio profil.
+Candidate assessment project repository for the Preliminary Teaching Evaluation (Prelim) at Koding Next.
 
----
+## Project Files
 
-## Cara Menjalankan
+- **`kalkulator_tk.py`** : Python GUI discount calculator (Tkinter).
+- **`kalkulator_cli.py`** : Python terminal / command-line discount calculator.
+- **`portofolio.html`** : Beginner portfolio website using clean HTML and basic neutral CSS.
 
-### 1. Kalkulator Python (GUI)
+## How to Run
+
+### 1. Python GUI Calculator
 ```bash
 python kalkulator_tk.py
 ```
 
-### 2. Kalkulator Python (CLI)
+### 2. Python CLI Calculator
 ```bash
 python kalkulator_cli.py
 ```
 
-### 3. Website (Portofolio / Kalkulator Web)
-Klik dua kali file `portofolio.html` atau `kalkulator.html` untuk membuka langsung di browser.
+### 3. Website Pages
+Double-click `portofolio.html` or `kalkulator.html` to open directly in any web browser.

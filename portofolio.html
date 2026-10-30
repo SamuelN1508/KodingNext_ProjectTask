@@ -1,118 +1,147 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Portofolio Saya</title>
-	<style>
-		/* CSS Warna Dasar & Teks Sederhana */
-		body {
-			background-color: lightcyan;
-			color: darkblue;
-			font-family: sans-serif;
-			text-align: center;
-		}
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    /* Simple, clean styling with neutral tones (no bright colors) */
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 25px;
+    }
 
-		h1 {
-			color: navy;
-		}
+    h1 {
+      color: #0f172a;
+      margin-top: 10px;
+    }
 
-		h2 {
-			color: crimson;
-		}
+    h2 {
+      color: #334155;
+      margin-top: 20px;
+    }
 
-		p {
-			color: black;
-		}
+    p {
+      color: #475569;
+      line-height: 1.5;
+    }
 
-		/* Styling gambar sederhana */
-		.foto-profil {
-			width: 120px;
-			height: 120px;
-			border: 3px solid navy;
-		}
+    hr {
+      border: 0;
+      border-top: 1px solid #cbd5e1;
+      margin: 25px auto;
+      max-width: 600px;
+    }
 
-		.foto-proyek {
-			width: 200px;
-			height: 130px;
-			border: 2px solid orange;
-			display: block;
-			margin: 10px auto;
-		}
+    /* Images */
+    .profile-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 2px solid #64748b;
+      object-fit: cover;
+    }
 
-		ul {
-			display: inline-block;
-			text-align: left;
-			background-color: white;
-			color: darkgreen;
-			padding: 15px 35px;
-			border: 2px solid green;
-		}
+    .project-image {
+      width: 200px;
+      height: 125px;
+      border: 1px solid #cbd5e1;
+      display: block;
+      margin: 10px auto;
+      object-fit: cover;
+    }
 
-		.box-proyek {
-			background-color: white;
-			border: 2px solid orange;
-			width: 280px;
-			display: inline-block;
-			margin: 10px;
-			padding: 15px;
-		}
+    /* Simple lists and project boxes */
+    ul {
+      display: inline-block;
+      text-align: left;
+      background-color: #ffffff;
+      color: #334155;
+      padding: 15px 35px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+    }
 
-		button {
-			background-color: yellow;
-			color: black;
-			font-size: 16px;
-			padding: 8px 16px;
-			border: 1px solid black;
-			cursor: pointer;
-		}
-	</style>
+    .project-box {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      width: 270px;
+      display: inline-block;
+      margin: 10px;
+      padding: 15px;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    button {
+      background-color: #334155;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0f172a;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- 1. Foto Profil & Judul -->
-	<img src="images/profile.jpg" alt="Foto Profil" class="foto-profil">
-	<h1>Portofolio Samuel</h1>
-	<p>Halo, selamat datang di website pertama saya! Saya sedang belajar membuat website.</p>
 
-	<hr>
+  <!-- 1. Profile Header -->
+  <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
+  <h1>Samuel Natanael</h1>
+  <p>Coding Educator &amp; Web Developer</p>
+  <p style="max-width: 500px; margin: 0 auto;">
+    Welcome to my simple personal website! I enjoy teaching basic programming logic, Python applications, and website fundamentals to students.
+  </p>
 
-	<!-- 2. Keahlian -->
-	<h2>Keahlian Saya</h2>
-	<ul>
-		<li>Belajar HTML dasar</li>
-		<li>Belajar CSS warna</li>
-		<li>Bahasa Python dasar</li>
-	</ul>
+  <hr>
 
-	<hr>
+  <!-- 2. Skills -->
+  <h2>My Skills</h2>
+  <ul>
+    <li>HTML5 &amp; Basic CSS</li>
+    <li>Python Fundamentals</li>
+    <li>Problem Solving &amp; Logic</li>
+    <li>Interactive JavaScript Basics</li>
+  </ul>
 
-	<!-- 3. Daftar Proyek dengan Gambar -->
-	<h2>Proyek Saya</h2>
-	<div class="box-proyek">
-		<h3>1. Kalkulator Diskon</h3>
-		<img src="images/proyek1.jpg" alt="Gambar Kalkulator" class="foto-proyek">
-		<p>Program kalkulator diskon menggunakan Python &amp; HTML.</p>
-	</div>
+  <hr>
 
-	<div class="box-proyek">
-		<h3>2. Website Pribadi</h3>
-		<img src="images/proyek2.jpg" alt="Gambar Website" class="foto-proyek">
-		<p>Website portofolio sederhana dengan HTML dan warna CSS.</p>
-	</div>
+  <!-- 3. Projects Showcase -->
+  <h2>My Projects</h2>
+  
+  <div class="project-box">
+    <h3>1. Discount Calculator</h3>
+    <img src="images/proyek1.jpg" alt="Calculator App" class="project-image">
+    <p>A simple program built with Python and HTML to calculate final price after discount.</p>
+  </div>
 
-	<hr>
+  <div class="project-box">
+    <h3>2. Personal Website</h3>
+    <img src="images/proyek2.jpg" alt="Website Project" class="project-image">
+    <p>A clean, beginner-friendly portfolio page built using semantic HTML and CSS.</p>
+  </div>
 
-	<!-- 4. Kontak & Tombol JS Sederhana -->
-	<h2>Kontak Saya</h2>
-	<p>Email: samuel@email.com</p>
-	<button onclick="sapa()">Klik Disini!</button>
+  <hr>
 
-	<script>
-		function sapa() {
-			alert("Halo! Terima kasih sudah mengunjungi website saya!");
-		}
-	</script>
+  <!-- 4. Contact & Interactive Button -->
+  <h2>Contact Me</h2>
+  <p>Email: samuel@example.com &bull; Location: Indonesia</p>
+  <button onclick="greetUser()">Say Hello</button>
+
+  <script>
+    function greetUser() {
+      alert("Hello! Thank you for visiting my portfolio website.");
+    }
+  </script>
 
 </body>
-
 </html>

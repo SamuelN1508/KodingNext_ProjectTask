@@ -1,25 +1,30 @@
+# ============================================================
+# Simple Discount Calculator (CLI - Python)
+# Designed for live-coding and beginner teaching demos
+# ============================================================
+
 def main():
     print("=" * 35)
-    print("   PROGRAM KALKULATOR DISKON")
+    print("      DISCOUNT CALCULATOR")
     print("=" * 35)
 
-    # 1. Mengambil input dari pengguna
+    # 1. Take input from user
     try:
-        harga_asli = float(input("Masukkan harga asli (Rp): "))
-        diskon = float(input("Masukkan diskon (%): "))
+        price = float(input("Enter original price: "))
+        discount = float(input("Enter discount rate (%): "))
     except ValueError:
-        print("Error: Harap masukkan angka yang valid!")
+        print("Error: Please enter valid numbers!")
         return
 
-    # 2. Rumus perhitungan diskon
-    potongan = harga_asli * (diskon / 100)
-    total_bayar = harga_asli - potongan
+    # 2. Calculate discount formula
+    discount_amount = price * (discount / 100)
+    final_price = price - discount_amount
 
-    # 3. Menampilkan rincian hasil
+    # 3. Display output
     print("-" * 35)
-    print(f"Harga Asli    : Rp {harga_asli:,.2f}")
-    print(f"Diskon ({diskon:.0f}%)   : Rp {potongan:,.2f}")
-    print(f"Total Bayar   : Rp {total_bayar:,.2f}")
+    print(f"Original Price : Rp {price:,.2f}")
+    print(f"Discount ({discount:.0f}%)  : Rp {discount_amount:,.2f}")
+    print(f"Final Price    : Rp {final_price:,.2f}")
     print("=" * 35)
 
 
